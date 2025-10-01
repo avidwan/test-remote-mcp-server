@@ -1,5 +1,12 @@
 from fastmcp import FastMCP
 
+
+# Create server
+mcp = FastMCP(name="testRemoteMcpServer")  
+
+
+
+
 # Register tools at module level
 @mcp.tool
 def add_numbers(a: float, b: float) -> float:
